@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <script>
+    // Forza HTTPS: se la pagina è aperta in http, reindirizza alla versione sicura (necessaria per form e tracciamenti)
+    (function () {
+      if (location.protocol === 'http:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        location.replace('https://' + location.host + location.pathname + location.search + location.hash);
+      }
+    })();
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Face — One Session. Eight Technologies. | Baldan</title>
+  <meta name="description" content="Turn every facial appointment into a recurring revenue stream with T-Face. Eight technologies in one guided platform — designed and manufactured in Italy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Baldan" />
+  <meta property="og:title" content="T-Face — One Session. Eight Technologies. | Baldan" />
+  <meta property="og:description" content="Turn every facial appointment into a recurring revenue stream with T-Face. Eight technologies in one guided platform — designed and manufactured in Italy." />
+  <meta property="og:image" content="assets/ba-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="T-Face — One Session. Eight Technologies. | Baldan" />
+  <meta name="twitter:description" content="Turn every facial appointment into a recurring revenue stream with T-Face. Eight technologies in one guided platform — designed and manufactured in Italy." />
+  <meta name="twitter:image" content="assets/ba-1.jpg" />
+  <!-- Google tag (gtag.js) — GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRX2QPDLYJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KRX2QPDLYJ');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/tailwind.css" />
+  <style>
+    html,body{overflow-x:clip;}
+    body { background-color: #FDF9F9; }
+    .grad-bordeaux { background: linear-gradient(120deg,#1E100F 0%,#4D0C12 48%,#6b0d18 100%); }
+    .grad-strip { background: linear-gradient(120deg,#1E100F 0%,#4D0C12 100%); }
+    .ba-track{display:flex;transition:transform .5s ease;}
+    .ba-slide{flex:0 0 100%;}
+    @media(min-width:768px){.ba-slide{flex:0 0 33.3333%;}}
+      @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important;}}
+      html{scroll-behavior:smooth;}
+    #pilot,#aura,#about{scroll-margin-top:80px;}
+  </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1567955260162409');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1567955260162409&ev=PageView&noscript=1"/></noscript>
+  <!-- End Meta Pixel Code -->
+  <script src="//pixel.convertize.io/11734.js"></script>
+  <script src="https://t.contentsquare.net/uxa/458ce3eeac9fa.js" defer></script>
+</head>
+<body class="font-sans text-darkmaroon antialiased">
+
+  <!-- ===================== STICKY NAV ===================== -->
+  <header class="sticky top-0 z-50 grad-strip text-white">
+    <div class="max-w-[1180px] mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#about" class="block">
+        <img width="1080" height="240" src="assets/Logo.png" alt="Baldan — A World of Beauty" class="h-9 w-auto" style="filter:brightness(0) invert(1);" />
+      </a>
+      <div class="flex items-center gap-6 md:gap-7">
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-[11px] font-semibold tracking-[0.16em] text-white/80">
+          <a href="#pilot" class="hover:text-white transition">US PILOT</a>
+          <a href="#aura" class="hover:text-white transition">AURA</a>
+          <a href="#about" class="hover:text-white transition">ABOUT BALDAN</a>
+        </nav>
+        <a href="#form" class="border border-white/60 px-4 py-2 text-[10px] font-semibold tracking-wide hover:bg-white hover:text-bordeaux transition">
+        BOOK YOUR CONSULTATION
+      </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative overflow-hidden grad-bordeaux text-white">
+    <div class="max-w-[1180px] mx-auto px-6 pt-16 pb-20">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+        <!-- copy -->
+        <div class="lg:col-span-7">
+          <span class="inline-block text-[10px] tracking-[0.3em] font-semibold text-white/70 border border-white/30 rounded-full px-4 py-1.5 mb-8">
+            PARTNER OFFER — APPLICATIONS CLOSE JULY 17, 2026
+          </span>
+          <h1 class="font-serif font-bold leading-[1.04] text-[40px] md:text-[54px]">
+            Add a <span class="whitespace-nowrap">$10,000+/Month</span> Facial Service. With $0 Upfront.
+          </h1>
+          <p class="mt-7 text-[18px] md:text-[20px] font-light text-white/90 max-w-[560px]">
+            One Session. Eight Technologies. A Client Who Comes Back Next Week.
+          </p>
+
+          <div class="mt-9 border-l-2 border-white/25 pl-5">
+            <div class="text-[10px] tracking-[0.28em] font-semibold text-white/55 mb-3">PARTNER OFFER · UNTIL JULY 17, 2026</div>
+            <ul class="space-y-3 text-[14px] text-white/85">
+              <li class="flex items-center gap-3"><span class="text-white">✓</span> <span><strong class="font-semibold text-white">$0</strong> upfront investment</span></li>
+              <li class="flex items-center gap-3"><span class="text-white">✓</span> <span>First <strong class="font-semibold text-white">12 capital rates funded</strong> — your first 12 months</span></li>
+              <li class="flex items-center gap-3"><span class="text-white">✓</span> <span><strong class="font-semibold text-white">AI-Powered Marketing</strong> included</span></li>
+            </ul>
+          </div>
+
+          <div class="mt-11">
+            <a href="#metrics" class="text-[12px] font-semibold tracking-wide text-white/80 hover:text-white transition underline underline-offset-4">
+              See the numbers
+            </a>
+          </div>
+        </div>
+
+        <!-- framed product image -->
+        <div class="lg:col-span-5">
+          <div class="bg-cream rounded-2xl shadow-2xl p-7 md:p-8 max-w-[440px] mx-auto lg:max-w-none">
+            <h3 class="font-serif font-bold text-[22px] text-darkmaroon text-center leading-snug">Get a call from our team</h3>
+            <p class="text-center text-[12px] text-darkmaroon/60 mt-2 mb-6">Leave your details — one of our advisors will call you back.</p>
+            <form class="lead-form space-y-3.5">
+        <input type="hidden" name="product" value="T-Face USA" />
+        <input type="hidden" name="variant" value="B-callmeback" />
+        <div aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden;"><input type="text" name="hp_company" tabindex="-1" autocomplete="off" /></div>
+        <div class="grid grid-cols-2 gap-3.5">
+          <input type="text" name="firstName" required placeholder="First Name *" autocomplete="given-name" class="bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="First Name" />
+          <input type="text" name="lastName" required placeholder="Last Name *" autocomplete="family-name" class="bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="Last Name" />
+        </div>
+        <input type="email" name="email" required placeholder="Business Email *" autocomplete="email" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="Business Email" />
+        <input type="tel" name="phone" required placeholder="Phone Number *" autocomplete="tel" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="Phone Number" />
+        <div class="pt-1">
+          <label class="block text-[12px] font-bold text-darkmaroon mb-2">Has your clinic been open for more than a year? *</label>
+          <div class="flex gap-6">
+            <label class="flex items-center gap-2 text-[13px] text-darkmaroon/80"><input type="radio" name="open" value="Yes" required class="accent-bordeaux"> Yes</label>
+            <label class="flex items-center gap-2 text-[13px] text-darkmaroon/80"><input type="radio" name="open" value="No" class="accent-bordeaux"> No</label>
+          </div>
+        </div>
+        <div class="pt-2 flex items-start gap-2.5">
+          <input type="checkbox" name="termsAccepted" value="Yes" required aria-label="I have read and accept the Privacy Policy" class="mt-1 accent-bordeaux shrink-0" />
+          <div>
+            <span class="text-[12px] font-bold text-darkmaroon">I have read and accept the <a href="https://www.baldangroup.com/en/privacy-policy/" target="_blank" rel="noopener" class="underline underline-offset-2 text-darkmaroon hover:text-bordeaux transition">Privacy Policy</a>. *</span>
+            <p class="text-[10px] text-darkmaroon/60 mt-1.5 leading-relaxed">
+              The data subject confirms that he/she has read the Information Notice on the Processing of Personal Data
+              entitled "Privacy Notice" pursuant to Articles 13 and 14 of the GDPR, and expresses his/her explicit, free
+              and informed consent to the processing of such data.
+            </p>
+          </div>
+        </div>
+        <button type="submit" class="mt-4 w-full bg-bordeaux text-white px-6 py-4 text-[12px] font-bold tracking-wide hover:opacity-90 transition">
+          CALL ME BACK
+        </button>
+      </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOCIAL PROOF (REALSELF SHOWCASE) ===================== -->
+  <section class="bg-white border-y border-black/10">
+    <div class="max-w-[880px] mx-auto px-6 py-14 text-center">
+      <div class="text-[10px] tracking-[0.3em] font-semibold text-darkmaroon/50">RECOGNIZED BY AMERICA&rsquo;S LARGEST AESTHETICS COMMUNITY</div>
+      <img width="1085" height="147" src="assets/realself-logo.png" alt="RealSelf" class="h-8 md:h-10 w-auto mx-auto mt-6" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'font-bold text-darkmaroon text-[34px] tracking-tight',textContent:'RealSelf'}))" />
+      <h2 class="font-serif font-bold text-[26px] md:text-[34px] text-darkmaroon mt-7 leading-snug">Baldan Technologies are the most requested aesthetic technologies in the United States, according to RealSelf.</h2>
+      <p class="text-[13px] text-darkmaroon/60 mt-5 max-w-[560px] mx-auto">RealSelf is the largest U.S. community for aesthetic treatments, with <strong class="text-darkmaroon">300,000+ verified patient reviews</strong> guiding millions of treatment decisions every year.</p>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT IS T-FACE ===================== -->
+  <section class="bg-white border-b border-black/10">
+    <div class="max-w-[1180px] mx-auto px-6 py-14">
+      <div class="max-w-[760px]">
+        <div class="text-[10px] tracking-[0.3em] font-semibold text-bordeaux">WHAT IS T-FACE</div>
+        <h2 class="font-serif font-bold text-[28px] md:text-[36px] text-darkmaroon mt-3 leading-snug">One platform. Eight technologies. Every facial treatment.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-7 mt-10">
+        <div class="border-l-2 border-bordeaux/30 pl-5">
+          <div class="text-[14px] font-bold text-darkmaroon">Eight technologies in one</div>
+          <p class="text-[13px] text-darkmaroon/75 mt-2.5 leading-relaxed">From deep cleansing — Hydrojet, Vacuum Abraser, Ultrasound — to Mesospheres, Photobio Stimulation and Aqua Glow, combined with a hypercosmetic ampoule system. Entirely designed in Italy.</p>
+        </div>
+        <div class="border-l-2 border-bordeaux/30 pl-5">
+          <div class="text-[14px] font-bold text-darkmaroon">Treats what clients ask for</div>
+          <p class="text-[13px] text-darkmaroon/75 mt-2.5 leading-relaxed">Wrinkles, loss of elasticity, skin spots, acne, sun damage, eye bags, double chin — and beyond the face: special stretch-mark and hair-thinning programs.</p>
+        </div>
+        <div class="border-l-2 border-bordeaux/30 pl-5">
+          <div class="text-[14px] font-bold text-darkmaroon">Check-up camera + guided software</div>
+          <p class="text-[13px] text-darkmaroon/75 mt-2.5 leading-relaxed">The HD camera with UV light analyzes the skin and saves before/after images; the software builds each client's personalized path. No medical background needed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== THE EIGHT TECHNOLOGIES (HANDPIECES) ===================== -->
+  <section class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 pt-14">
+      <div class="text-center">
+        <div class="text-[10px] tracking-[0.3em] font-semibold text-bordeaux">EIGHT TECHNOLOGIES</div>
+        <h2 class="font-serif font-bold text-[28px] md:text-[36px] text-darkmaroon mt-3">The platform, up close.</h2>
+      </div>
+      <div class="mt-10">
+        <div class="text-center text-[11px] tracking-[0.25em] font-bold text-darkmaroon/50">CLEANING FUNCTIONS</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-5">
+        <div class="bg-white rounded-xl border border-black/5 p-5 text-center">
+          <img src="assets/hydrojet.png" alt="HYDROJET handpiece" class="w-24 h-24 object-contain mx-auto" loading="lazy" onerror="this.style.display='none'" />
+          <div class="text-[11px] tracking-[0.14em] font-bold text-darkmaroon mt-3">HYDROJET</div>
+          <p class="text-[11px] text-darkmaroon/65 mt-1.5 leading-relaxed">Cleanses the face in depth and stimulates cell regeneration</p>
+        </div>
+        <div class="bg-white rounded-xl border border-black/5 p-5 text-center">
+          <img src="https://baldangroup.com/site/uploads/2023/09/MANIPOLO-DERMOPEELING-350x350.png" alt="VACUUM ABRASER handpiece" class="w-24 h-24 object-contain mx-auto" loading="lazy" />
+          <div class="text-[11px] tracking-[0.14em] font-bold text-darkmaroon mt-3">VACUUM ABRASER</div>
+          <p class="text-[11px] text-darkmaroon/65 mt-1.5 leading-relaxed">Deep peels for scars and stretch marks, improving their appearance from the very first session</p>
+        </div>
+        <div class="bg-white rounded-xl border border-black/5 p-5 text-center">
+          <img src="https://baldangroup.com/site/uploads/2023/09/MANIPOLO-ULTRAUONO-350x350.png" alt="ULTRASOUND handpiece" class="w-24 h-24 object-contain mx-auto" loading="lazy" />
+          <div class="text-[11px] tracking-[0.14em] font-bold text-darkmaroon mt-3">ULTRASOUND</div>
+          <p class="text-[11px] text-darkmaroon/65 mt-1.5 leading-relaxed">Treats skin hyperkeratosis and dry skin</p>
+        </div>
+        </div>
+        <div class="text-center text-[11px] tracking-[0.25em] font-bold text-darkmaroon/50 mt-10">TREATMENT FUNCTIONS</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mt-5">
+        <div class="bg-white rounded-xl border border-black/5 p-5 text-center">
+          <img src="https://baldangroup.com/site/uploads/2023/09/MANIPOLO-MESOSPHERE-2-350x350.png" alt="MESOSPHERES handpiece" class="w-24 h-24 object-contain mx-auto" loading="lazy" />
+          <div class="text-[11px] tracking-[0.14em] font-bold text-darkmaroon mt-3">MESOSPHERES</div>
+          <p class="text-[11px] text-darkmaroon/65 mt-1.5 leading-relaxed">Anti-ageing, rejuvenating, smoothing and toning effect</p>
+        </div>
+        <div class="bg-white rounded-xl border border-black/5 p-5 text-center">
+          <img src="https://baldangroup.com/site/uploads/2023/09/FOTOBIOSTIMOLAZIONE-350x350.png" alt="PHOTOBIO STIMULATION DOME handpiece" class="w-24 h-24 object-contain mx-auto" loading="lazy" />
+          <div class="text-[11px] tracking-[0.14em] font-bold text-darkmaroon mt-3">PHOTOBIO STIMULATION DOME</div>
+          <p class="text-[11px] text-darkmaroon/65 mt-1.5 leading-relaxed">Different wavelengths act on wrinkles, enlarged pores, scars and acne marks — customised for every skin type</p>
+        </div>
+        <div class="bg-white rounded-xl border border-black/5 p-5 text-center">
+          <img src="assets/aqua-glow.png" alt="AQUA GLOW handpiece" class="w-24 h-24 object-contain mx-auto" loading="lazy" onerror="this.style.display='none'" />
+          <div class="text-[11px] tracking-[0.14em] font-bold text-darkmaroon mt-3">AQUA GLOW</div>
+          <p class="text-[11px] text-darkmaroon/65 mt-1.5 leading-relaxed">Deep cleansing, active infusion, immediate glow — perfect for discoloration, dull or dry skin</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VIDEO (YOUTUBE) ===================== -->
+  <section class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 pt-14">
+      <div class="text-center">
+        <div class="text-[10px] tracking-[0.3em] font-semibold text-bordeaux">SEE IT IN ACTION</div>
+        <h2 class="font-serif font-bold text-[28px] md:text-[36px] text-darkmaroon mt-3">T-Face, in action.</h2>
+      </div>
+      <div class="mt-8 max-w-[920px] mx-auto">
+        <iframe class="w-full aspect-video rounded-xl shadow-2xl" src="https://www.youtube-nocookie.com/embed/hJ75GjNVM00" title="T-Face — official video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BEFORE / AFTER CAROUSEL ===================== -->
+  <section class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 py-14">
+      <div class="text-center mb-9">
+        <div class="text-[10px] tracking-[0.3em] font-semibold text-bordeaux">REAL RESULTS</div>
+        <h2 class="font-serif font-bold text-[30px] md:text-[38px] text-darkmaroon mt-3">The results your clients will ask for.</h2>
+      </div>
+      <div class="relative">
+        <div class="overflow-hidden rounded-xl">
+          <div id="baTrack" class="ba-track">
+            <div class="ba-slide px-1.5"><img width="1170" height="1052" src="assets/ba-1.jpg" alt="T-Face before and after — jawline" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img width="1170" height="1052" src="assets/ba-2.jpg" alt="T-Face before and after — full face" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img width="1170" height="1052" src="assets/ba-3.jpg" alt="T-Face before and after — chin and neck" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img width="1170" height="1052" src="assets/ba-4.jpg" alt="T-Face before and after — profile" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img width="1170" height="1052" src="assets/ba-5.jpg" alt="T-Face before and after — cheeks" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+            <div class="ba-slide px-1.5"><img width="1170" height="1052" src="assets/ba-6.jpg" alt="T-Face before and after — eye area" class="w-full rounded-lg object-cover" loading="lazy" /></div>
+          </div>
+        </div>
+        <button type="button" id="baPrev" aria-label="Previous" class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md text-bordeaux font-bold hover:bg-white/90 transition">&#8249;</button>
+        <button type="button" id="baNext" aria-label="Next" class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md text-bordeaux font-bold hover:bg-white/90 transition">&#8250;</button>
+      </div>
+      <div id="baDots" class="flex justify-center gap-2 mt-6"></div>
+      <p class="text-center text-[11px] text-darkmaroon/55 mt-5">Unretouched client photos. Individual results may vary.</p>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      const track = document.getElementById("baTrack");
+      const slides = track.children.length;
+      const dotsBox = document.getElementById("baDots");
+      let per = window.matchMedia("(min-width:768px)").matches ? 3 : 1;
+      let pages = Math.ceil(slides / per), page = 0, timer;
+      function buildDots(){
+        dotsBox.innerHTML = "";
+        for (let i=0;i<pages;i++){
+          const d=document.createElement("button");
+          d.type="button"; d.setAttribute("aria-label","Go to slide "+(i+1));
+          d.className="w-2.5 h-2.5 rounded-full transition " + (i===page?"bg-bordeaux":"bg-bordeaux/25");
+          d.addEventListener("click",()=>{page=i;update();restart();});
+          dotsBox.appendChild(d);
+        }
+      }
+      function update(){
+        track.style.transform = "translateX(-" + (page*100) + "%)";
+        Array.prototype.forEach.call(dotsBox.children,(d,i)=>{ d.className="w-2.5 h-2.5 rounded-full transition " + (i===page?"bg-bordeaux":"bg-bordeaux/25"); });
+      }
+      function step(dir){ page=(page+dir+pages)%pages; update(); }
+      function restart(){ clearInterval(timer); timer=setInterval(()=>step(1),5000); }
+      document.getElementById("baPrev").addEventListener("click",()=>{step(-1);restart();});
+      document.getElementById("baNext").addEventListener("click",()=>{step(1);restart();});
+      window.addEventListener("resize",()=>{ const np=window.matchMedia("(min-width:768px)").matches?3:1; if(np!==per){per=np;pages=Math.ceil(slides/per);page=Math.min(page,pages-1);buildDots();update();} });
+      buildDots(); update(); restart();
+    })();
+  </script>
+
+  <!-- ===================== THE OFFER (RISK REVERSAL, BELOW HERO) ===================== -->
+  <section id="pilot" class="bg-darkmaroon text-white">
+    <div class="max-w-[1180px] mx-auto px-6 py-14">
+      <div class="mb-9 flex items-center gap-4 text-white">
+        <span class="text-[11px] tracking-[0.28em] font-bold text-white/60">LIMITED-TIME PARTNER OFFER</span>
+        <span class="h-px flex-1 bg-white/15"></span>
+        <span class="text-[12px] font-semibold">Applications close July 17, 2026</span>
+      </div>
+      <div class="max-w-[760px] mb-10">
+        <p class="font-serif font-bold text-[22px] md:text-[26px] leading-snug">
+          A European leading company — 45 years of experience, 9,000+ clinics worldwide and 900 across America.
+        </p>
+        <p class="mt-4 text-[15px] font-light text-white/80">
+          That track record is exactly why we can invest first — and take the risk off your shoulders.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-5">
+        <div class="border border-white/15 rounded-xl p-6 transition hover:border-white/30">
+          <div class="w-11 h-11 rounded-lg border border-white/15 flex items-center justify-center text-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-[22px] h-[22px]"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/></svg>
+          </div>
+          <h3 class="mt-4 text-[15px] font-semibold">No upfront investment</h3>
+          <p class="mt-2 text-[13px] text-white/70 leading-relaxed">Your device arrives without an upfront payment to unlock it.</p>
+        </div>
+        <div class="border border-white/15 rounded-xl p-6 transition hover:border-white/30">
+          <div class="w-11 h-11 rounded-lg border border-white/15 flex items-center justify-center text-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-[22px] h-[22px]"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+          </div>
+          <h3 class="mt-4 text-[15px] font-semibold">First 12 capital rates funded</h3>
+          <p class="mt-2 text-[13px] text-white/70 leading-relaxed">The first 12 capital rates are fully funded by us.</p>
+        </div>
+        <div class="border border-white/15 rounded-xl p-6 transition hover:border-white/30">
+          <div class="w-11 h-11 rounded-lg border border-white/15 flex items-center justify-center text-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-[22px] h-[22px]"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+          </div>
+          <h3 class="mt-4 text-[15px] font-semibold">Pay only from results</h3>
+          <p class="mt-2 text-[13px] text-white/70 leading-relaxed">After year one, payments begin only once the device has generated revenue.</p>
+        </div>
+      </div>
+
+      <p class="mt-10 font-serif font-bold italic text-[22px] md:text-[26px] leading-snug">
+        Your business risk: zero. Your growth potential: unlimited.
+      </p>
+      <div class="mt-7">
+        <a href="#form" class="inline-block bg-white text-bordeaux px-8 py-4 text-[12px] font-bold tracking-wide hover:bg-white/90 transition">
+          REQUEST A CALL BACK
+        </a>
+      </div>
+      <p class="mt-5 text-[12px] text-white/55">Professional aesthetic technology · No Medical Director required · We partner with a limited number of clinics per area.</p>
+    </div>
+  </section>
+
+  <!-- ===================== THE SHIFT (PROBLEM → SOLUTION) ===================== -->
+  <section class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 pt-24 pb-16">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-6">
+          <span class="text-[11px] tracking-[0.25em] font-bold text-bordeaux">THE SHIFT</span>
+          <h2 class="font-serif font-bold text-[36px] md:text-[42px] leading-[1.12] mt-4 text-darkmaroon">
+            Most facials are a one-off. T-Face is a programme your clients build their week around.
+          </h2>
+        </div>
+        <div class="md:col-span-6 md:pt-12">
+          <p class="text-[16px] leading-relaxed text-darkmaroon/90">
+            Most facials treat the surface. T-Face works every layer — from deep tissue activation to the
+            outermost skin — in a single guided session your clients feel the moment they look in the mirror.
+          </p>
+          <p class="mt-6 text-[20px] font-serif font-bold italic text-bordeaux leading-snug">
+            That's what turns a one-time appointment into a weekly ritual.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS (3 STEPS) ===================== -->
+  <section class="grad-strip text-white">
+    <div class="max-w-[1180px] mx-auto px-6 py-20">
+      <div class="text-center max-w-[640px] mx-auto">
+        <span class="text-[11px] tracking-[0.25em] font-bold text-white/70">HOW IT WORKS</span>
+        <h2 class="font-serif font-bold text-[30px] md:text-[36px] mt-4 leading-tight">Every session runs the same way.</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mt-14">
+        <div class="border border-white/15 rounded-lg p-7">
+          <div class="font-serif text-[40px] text-white/40 leading-none">01</div>
+          <h3 class="mt-4 text-[16px] font-semibold">It reads the ampoule chip</h3>
+          <p class="mt-3 text-[13px] text-white/70 leading-relaxed">The device identifies each ampoule automatically — so the right treatment is set before you begin.</p>
+        </div>
+        <div class="border border-white/15 rounded-lg p-7">
+          <div class="font-serif text-[40px] text-white/40 leading-none">02</div>
+          <h3 class="mt-4 text-[16px] font-semibold">It matches the protocol</h3>
+          <p class="mt-3 text-[13px] text-white/70 leading-relaxed">The correct protocol loads on its own, delivering the same premium result session after session.</p>
+        </div>
+        <div class="border border-white/15 rounded-lg p-7">
+          <div class="font-serif text-[40px] text-white/40 leading-none">03</div>
+          <h3 class="mt-4 text-[16px] font-semibold">It guides your team on screen</h3>
+          <p class="mt-3 text-[13px] text-white/70 leading-relaxed">Clear step-by-step prompts mean no training burden and no room for error.</p>
+        </div>
+      </div>
+
+      <p class="text-center text-[14px] text-white/80 mt-12 max-w-[620px] mx-auto">
+        No training burden. No risk of error. Just a consistent premium result. <span class="text-white font-semibold">Every client, every time.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== REVENUE METRICS ===================== -->
+  <section id="metrics" class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 pt-20 pb-6">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center max-w-[820px] mx-auto">
+        <div>
+          <div class="font-serif font-bold text-[44px] text-bordeaux leading-none">$10,000+</div>
+          <div class="text-[13px] mt-3 text-darkmaroon/80">Monthly revenue potential</div>
+        </div>
+        <div>
+          <div class="font-serif font-bold text-[44px] text-bordeaux leading-none">2</div>
+          <div class="text-[13px] mt-3 text-darkmaroon/80">Clients a month needed to turn a profit</div>
+        </div>
+        <div>
+          <div class="font-serif font-bold text-[44px] text-bordeaux leading-none">$0</div>
+          <div class="text-[13px] mt-3 text-darkmaroon/80">Upfront investment</div>
+        </div>
+      </div>
+      <p class="text-center text-[11px] text-darkmaroon/50 mt-8">Results may vary based on clinic performance.</p>
+    </div>
+  </section>
+
+  <!-- ===================== MARGIN / RETENTION ===================== -->
+  <section class="bg-cream">
+    <div class="max-w-[720px] mx-auto px-6 pt-10 pb-20 text-center">
+      <h2 class="font-serif font-bold text-[28px] md:text-[32px] text-darkmaroon leading-tight">
+        Eight functions. One device. No guesswork per session.
+      </h2>
+      <p class="mt-7 text-[15px] leading-relaxed text-darkmaroon/90">
+        At a premium session rate, most clinics recover the investment in months. What follows is pure margin
+        on a service clients book specifically — and describe to others before they leave the building.
+      </p>
+      <p class="mt-5 text-[15px] leading-relaxed text-darkmaroon/90">
+        T-Face gives your clients a structured, guided experience that combines deep infusion, active resurfacing
+        and visible skin renewal — all in a controlled session they can repeat every week. Clients who see the
+        difference in the room do not cancel. They come back, they upgrade, they bring others.
+      </p>
+      <p class="mt-8 text-[20px] font-serif font-bold text-bordeaux leading-snug">
+        Retention is not a marketing problem. It's a product problem. T-Face solves it.
+      </p>
+      <div class="mt-10">
+        <a href="#form" class="inline-block bg-bordeaux text-white px-8 py-4 text-[12px] font-bold tracking-wide hover:opacity-90 transition">
+          REQUEST YOUR MARKET POSITIONING CONSULTATION
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AURA (AGENCY COST WIPED OUT) ===================== -->
+  <section id="aura" class="grad-strip text-white">
+    <div class="max-w-[1180px] mx-auto px-6 py-16">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-7">
+          <div class="text-[10px] tracking-[0.3em] font-semibold text-white/55">YOUR MARKETING, HANDLED</div>
+          <div class="mt-5 flex flex-wrap items-baseline gap-x-4 gap-y-2">
+            <span class="font-serif font-bold text-[46px] md:text-[60px] leading-none line-through decoration-[5px] decoration-white/90 text-white/55">$70,000/year</span>
+          </div>
+          <div class="mt-2 text-[13px] md:text-[15px] text-white/80">the average cost of a U.S. marketing agency*</div>
+          <h2 class="font-serif font-bold text-[26px] md:text-[34px] mt-6 leading-snug">Wiped out by AURA — your new marketing agency, included for 12 months.</h2>
+          <p class="mt-5 text-[15px] leading-relaxed text-white/85 max-w-[600px]">
+            Aura is your new AI-powered marketing engine, included: it creates and runs your ad
+            campaigns on Meta — Facebook and Instagram — and optimizes them on its own, while you do what you do best.
+          </p>
+          <div class="mt-5 flex items-center gap-2.5 text-[13px] text-white/70">
+            <span>Campaigns run on</span>
+            <img src="assets/meta-logo.png" alt="Meta" class="h-5 w-auto" style="filter:brightness(0) invert(1);" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'font-bold text-white text-[16px]',textContent:'Meta'}))" />
+          </div>
+          <div class="mt-8">
+            <a href="#form" class="inline-block bg-white text-bordeaux px-8 py-4 text-[12px] font-bold tracking-wide hover:bg-white/90 transition">
+              SEE WHAT AURA CAN DO FOR YOU
+            </a>
+          </div>
+          <p class="mt-5 text-[10px] text-white/40">*Industry estimate. Ad budget excluded. Terms and conditions apply.</p>
+        </div>
+        <div class="lg:col-span-5">
+          <img width="900" height="1000" src="assets/aura-campaigns.png" alt="The Aura dashboard — one campaign live on Meta, one launching"
+               class="w-full max-w-[420px] mx-auto rounded-2xl shadow-2xl" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HERITAGE / TRUST ===================== -->
+  <section id="about" class="bg-graybg">
+    <div class="max-w-[1180px] mx-auto px-6 py-20">
+      <div class="flex flex-col md:flex-row md:items-center gap-10 md:gap-16">
+        <div class="shrink-0">
+          <img width="1080" height="240" src="assets/Logo.png" alt="Baldan — A World of Beauty" class="h-16 w-auto mx-auto md:mx-0" />
+        </div>
+        <h2 class="font-serif font-bold text-[28px] md:text-[34px] leading-[1.15] text-darkmaroon">
+          Over 45 years of Italian Medical &amp; Technological Excellence
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 text-center mt-16">
+        <div class="bg-white/60 rounded-lg py-8 px-4">
+          <div class="font-serif font-bold text-[38px] text-bordeaux leading-none">9,000+</div>
+          <div class="text-[13px] mt-3 text-darkmaroon/80 leading-snug">beauty clinics and pharmacies already use Baldan solutions daily</div>
+        </div>
+        <div class="bg-white/60 rounded-lg py-8 px-4">
+          <div class="font-serif font-bold text-[38px] text-bordeaux leading-none">250</div>
+          <div class="text-[13px] mt-3 text-darkmaroon/80 leading-snug">professionals including beauty experts, cosmetologists and doctors</div>
+        </div>
+        <div class="bg-white/60 rounded-lg py-8 px-4">
+          <div class="font-serif font-bold text-[38px] text-bordeaux leading-none">28</div>
+          <div class="text-[13px] mt-3 text-darkmaroon/80 leading-snug">countries — and a new Miami office leading the U.S. market</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA BANNER ===================== -->
+  <section class="grad-strip text-white">
+    <div class="max-w-[1180px] mx-auto px-6 py-12 text-center">
+      <h2 class="font-serif font-bold text-[24px] md:text-[28px] leading-tight tracking-wide">
+        GIVE YOUR CLIENTS THE FACIAL THEY WILL NEVER WANT TO STOP.
+      </h2>
+    </div>
+  </section>
+
+  <!-- ===================== FORM ===================== -->
+  <section id="form" class="bg-graybg">
+    <div class="max-w-[600px] mx-auto px-6 py-16">
+      <h2 class="font-serif font-bold text-[26px] text-darkmaroon text-center">Request your consultation</h2>
+      <p class="text-center text-[13px] text-darkmaroon/70 mt-3 mb-9">
+        Tell us about your clinic. We'll show you how T-Face fits your room, your team and your margins.
+      </p>
+
+      <form class="lead-form space-y-3.5">
+        <input type="hidden" name="product" value="T-Face USA" />
+        <input type="hidden" name="variant" value="B-callmeback" />
+        <div aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden;"><input type="text" name="hp_company" tabindex="-1" autocomplete="off" /></div>
+        <div class="grid grid-cols-2 gap-3.5">
+          <input type="text" name="firstName" required placeholder="First Name *" autocomplete="given-name" class="bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="First Name" />
+          <input type="text" name="lastName" required placeholder="Last Name *" autocomplete="family-name" class="bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="Last Name" />
+        </div>
+        <input type="email" name="email" required placeholder="Business Email *" autocomplete="email" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="Business Email" />
+        <input type="tel" name="phone" required placeholder="Phone Number *" autocomplete="tel" class="w-full bg-white text-[13px] text-gray-700 px-3.5 py-3 outline-none rounded-sm border border-black/10 placeholder:text-gray-400 focus:border-bordeaux"  aria-label="Phone Number" />
+        <div class="pt-1">
+          <label class="block text-[12px] font-bold text-darkmaroon mb-2">Has your clinic been open for more than a year? *</label>
+          <div class="flex gap-6">
+            <label class="flex items-center gap-2 text-[13px] text-darkmaroon/80"><input type="radio" name="open" value="Yes" required class="accent-bordeaux"> Yes</label>
+            <label class="flex items-center gap-2 text-[13px] text-darkmaroon/80"><input type="radio" name="open" value="No" class="accent-bordeaux"> No</label>
+          </div>
+        </div>
+        <div class="pt-2 flex items-start gap-2.5">
+          <input type="checkbox" name="termsAccepted" value="Yes" required class="mt-1 accent-bordeaux shrink-0" />
+          <div>
+            <span class="text-[12px] font-bold text-darkmaroon">I have read and accept the <a href="https://www.baldangroup.com/en/privacy-policy/" target="_blank" rel="noopener" class="underline underline-offset-2 text-darkmaroon hover:text-bordeaux transition">Privacy Policy</a>. *</span>
+            <p class="text-[10px] text-darkmaroon/60 mt-1.5 leading-relaxed">
+              The data subject confirms that he/she has read the Information Notice on the Processing of Personal Data
+              entitled "Privacy Notice" pursuant to Articles 13 and 14 of the GDPR, and expresses his/her explicit, free
+              and informed consent to the processing of such data.
+            </p>
+          </div>
+        </div>
+        <button type="submit" class="mt-4 w-full bg-bordeaux text-white px-6 py-4 text-[12px] font-bold tracking-wide hover:opacity-90 transition">
+          CALL ME BACK
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-cream">
+    <div class="max-w-[1180px] mx-auto px-6 py-6 text-center">
+      <p class="text-[10px] text-darkmaroon/60">Copyright © 2025 | B&amp;M srl – Marketing nel Benessere – P.I. 03247930278 - C.F. 03382350266</p>
+    </div>
+  </footer>
+
+  <!-- ===================== FORM → ZAPIER ===================== -->
+  <script>
+    const FORM_ENDPOINT = "https://hooks.zapier.com/hooks/catch/10983876/42c4zt1/";
+
+    // ---- Gestione di TUTTI i form (fisarmonica in alto + form in fondo) ----
+    document.querySelectorAll(".lead-form").forEach(function (form) {
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const honeypot = form.querySelector('[name="hp_company"]');
+
+      function englishMessage(el) {
+        const v = el.validity;
+        if (v.valueMissing) {
+          if (el.type === "checkbox") return "Please tick this box to continue.";
+          if (el.type === "radio") return "Please select one of these options.";
+          if (el.tagName === "SELECT") return "Please select an option from the list.";
+          return "Please fill out this field.";
+        }
+        if (v.typeMismatch) {
+          if (el.type === "email") return "Please enter a valid email address.";
+        }
+        return "";
+      }
+      Array.prototype.forEach.call(form.elements, function (el) {
+        if (!el.name && !el.required) return;
+        el.addEventListener("invalid", function () { el.setCustomValidity(englishMessage(el)); });
+        el.addEventListener("input", function () { el.setCustomValidity(""); });
+        el.addEventListener("change", function () { el.setCustomValidity(""); });
+      });
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (honeypot && honeypot.value) { return; }
+        const original = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = "SENDING…";
+
+        const payload = new URLSearchParams(new FormData(form));
+        payload.delete("hp_company");
+        const now = new Date();
+        const pad = function (n) { return String(n).padStart(2, "0"); };
+        payload.append("submittedAt",
+          now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate()) +
+          " " + pad(now.getHours()) + ":" + pad(now.getMinutes()) + ":" + pad(now.getSeconds()));
+
+
+        // --- Consenso privacy: registro completo per il Google Sheet ---
+        var _terms = form.querySelector('[name="termsAccepted"]');
+        payload.set("consent", (_terms && _terms.checked) ? "Yes" : "No");
+        payload.append("consentStatement", "I have read and accept the Privacy Policy. The data subject expresses explicit, free and informed consent to the processing of personal data pursuant to Articles 13 and 14 of the GDPR.");
+        payload.append("consentVersion", "privacy-2026-07");
+        payload.append("privacyPolicyUrl", "https://www.baldangroup.com/en/privacy-policy/");
+        payload.append("consentTimestampISO", new Date().toISOString());
+        payload.append("pageUrl", window.location.href);
+        payload.append("userAgent", navigator.userAgent);
+
+        fetch(FORM_ENDPOINT, { method: "POST", body: payload })
+          .then(function () {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: "lead_submit", form_name: "consultation" });
+            if (typeof gtag === "function") { gtag("event", "generate_lead", { form_name: "consultation" }); }
+            if (typeof fbq === "function") { fbq("track", "Lead"); }
+            form.reset();
+            submitBtn.textContent = "THANK YOU — REDIRECTING…";
+            setTimeout(function () { window.location.href = "thank-you.html"; }, 400);
+          })
+          .catch(function () {
+            alert("Something went wrong. Please try again.");
+            submitBtn.disabled = false;
+            submitBtn.textContent = original;
+          });
+      });
+    });
+  </script>
+
+</body>
+</html>
